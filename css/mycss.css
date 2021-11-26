@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*  NAV  */
+
+nav{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.75fr 0.75fr;
+}
+
+nav img{
+    width: 30%;
+    margin-left: 6em;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+nav ul li a{
+    font-size: 2em;
+    text-decoration: none;
+    color: #005447;
+    font-weight: 600;
+    
+}
+
+nav button{
+    margin-top: 0.5em;
+    font-size: 1em;
+    color: #005447;
+    font-weight: 700;
+}
+
+nav .entrar{
+    width: 50%;
+    height: 70%;
+    background-color: #DFFF9B;
+    border-radius: 0.5em;
+    margin-left: 4em;
+    border: none;
+}
+
+.entrar a, .registrar a{
+    text-decoration: none;
+    color: #005447;
+}
+
+nav .registrar{
+    width: 80%;
+    height: 70%;
+    border-radius: 1em;
+    background-color: rgba(0, 128, 0, 0);
+    border: 2px green solid;
+}
+
+
+/*  LOGIN  */
+
+.fondoDinero{ 
+    background-image: url("./../img/FondoLoginRegister.png");
+    background-color: #cccccc;
+    height: 85.2vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    padding-top: 3em;
+}
+
+.fondoDinero article{
+    width: 40%;
+    margin: 0 auto;
+    background-color: #f0eeeecb;
+    box-shadow: 1em 1em 1em rgb(12, 11, 11);
+    border-radius: 2em;
+    padding-top: 3em;
+}
+
+.fondoDinero article{
+display: grid;
+grid-template-rows: 1fr 2fr;
+}
+
+.fondoDinero article h2{
+    font-size: 2.5em;
+    display: grid;
+    justify-content: center;
+}
+
+hr {
+    height: 0.05em;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    border: none;
+  }
+
+.formularioLogin{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inputLogin{
+    margin-bottom: 2em;
+    width: 100%;
+    height: 10%;
+    font-size: 1em;
+    border-radius: 0.75em;
+    border: rgb(78, 82, 78) 0.15rem solid;
+}
+
+.entrarLoginForm{
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    padding: 0.5em 0.75em;
+    background-color: #DFFF9B;
+    margin: 1em auto 3em auto;
+    border-radius: 0.5em;
+    border: none;
+    border: #005447 0.2em solid;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.entrarLoginForm a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*   PARTICULARES   */
+
+.bannerParticulares{
+    position: relative;
+    background-image: url("./../img/pagina_particulares/fondoPaginaParticulares.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 93vh;
+}
+
+.bannerParticulares h2{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 32%;
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+}
+
+.seccionesParticulares{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 80%;
+    margin: 3em auto;
+    align-items: center;
+}
+
+.seccionesParticulares hgroup{
+    margin-right: 7em;
+}
+
+.tituloArticulo{
+    font-size: 2em;
+}
+
+.descipcionArticulo{
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.seccionesParticulares img{
+    width: 90%;
+}
+
+
+/*   EMPRESAS   */
+
+.bannerEmpresas{
+    position: relative;
+    background-image: url("./../img/pagina_empresas/fondoPaginaEmpresas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 93vh;
+}
+
+.bannerEmpresas h2{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 50%;
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+}
+
+.seccionesEmpresas{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 80%;
+    margin: 3em auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seccionesEmpresas img{
+    width: 80%;
+    height: 20em;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+
+.seccionesEmpresas h4{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+
+
+
+/*   FOOTER    */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(39, 35, 35);
+}
+
+footer>img{
+    width: 10%;
+    margin: 1em auto;
+}
+
+footer>h6{
+    color: white;
+    margin: auto;
+    font-size: 1em;
+}
+
+footer>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer>div>img{
+    width: 10%;
+}

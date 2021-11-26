@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*  NAV  */
+
+nav{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.75fr;
+}
+
+nav img{
+    width: 34%;
+    margin-left: 6em;
+    margin-top: 0.3em;
+    fill: #005447;
+}
+
+.titulo{
+    font-size: 3em;
+    margin: 0 auto;
+}
+
+.salir{
+    width: 50%;
+    height: 60%;
+    margin: auto;
+    background-color: #DAD2BC;
+    border: none;
+    border-radius: 1em;
+}
+
+.salir:hover{
+    transition-property: background-color;
+    transition-duration: 1s;
+    background-color: #948d7c;
+}
+
+.salir a{
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #5A5248;
+    text-decoration: none;
+}
+
+.salir a:hover{
+    transition-property: color;
+    transition-duration: 1s;
+    color: #e6e4de;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+aside{
+    background-color: #DFFF9B;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+
+}
+
+aside ul li{
+    padding-top: 1em;
+    padding-bottom:1em;
+}
+
+aside ul li a{
+    text-decoration: none;
+    padding: 1em;
+    color: #005447;
+    font-size: 1.4em;
+    width: 100%;
+}
+
+.activado{
+    width: 100%;
+    background-color: #B3CE7B;
+    font-weight: bold;
+}
+
+article{
+    padding: 2em 4em;
+    background-color: #E3DBDB;
+}
+
+article h2{
+    display: grid;
+    justify-content: flex-start;
+    color: #005447;
+}
+
+hr{
+    height: 0.1em;
+    background-color: #005447;
+    width: 103%;
+    border: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cuenta{
+    background-color: #F1F0F0;
+    margin-top: 3em;
+    width: 30%;
+    height: 25em;
+    border: 0.15em #909090 solid;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em rgb(128, 117, 117);
+}
+
+.nombreCuenta{
+    margin: 1em 2em;
+}
+
+.nombreCuenta h3{
+    font-size: 1.5em;
+}
+
+.nombreCuenta h4{
+    font-size: 0.9em;
+}
+
+.dineroCuentaHgroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dineroCuenta{
+    font-size: 2em;
+}
+
+.movimientosBizum{
+    margin: 0.8em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/*  TARJETAS*/
+
+.tarjeta{
+    background-color: #F1F0F0;
+    margin-top: 3em;
+    width: 30%;
+    height: 10em;
+    border: 0.15em #909090 solid;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em rgb(128, 117, 117);
+}
+
+.tarjeta h4{
+    margin-top: 0.5em;
+    margin-bottom: 1.8em;
+}
+
+.tarjeta h5{
+    margin-top: 0.5em;
+}
+
+.container__card{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 350px;
+    height: 20em;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.body__card_front{
+
+    height: 80%;
+    text-align: center;
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #F1F0F0;
+    border: 0.15em #909090 solid;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em rgb(128, 117, 117);
+    transform: translateZ(60px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+.body__card_back{
+    padding: 20px;
+    margin-top: 1.5em;
+    margin-left: 2em;
+    transform: translateZ(60px);
+}
+
+.body__card_back h4{
+    margin-top: 1em;
+
+}
+
+.body__card_back h5{
+    margin-top: 0.5em;
+    
+}
+
+.body__card_back input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}
+
+.body__card_back input:hover{
+    box-shadow: 1px 1px 30px 0px #449de6;
+}
+
+
+/*   SEGUROS || PRESTAMOS  */
+.carta{
+    background-color: #F1F0F0;
+    margin-top: 3em;
+    width: 19%;
+    height: 18em;
+    border: 0.15em #909090 solid;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em rgb(128, 117, 117);
+    padding: 1em;
+    position: relative;
+}
+
+.carta img{
+    width: 100%;
+    height: 7em;
+}
+
+.carta h4{
+    margin: 0.8em;
+    font-size: 1.1em;
+}
+
+.carta h6{
+    margin: 1em;
+    font-size: 0.8em;
+}
+
+
+/*   RENTING   */
+
+.cartaRenting{
+    background-color: #F1F0F0;
+    margin-top: 2em;
+    width: 19%;
+    height: 15em;
+    border: 0.15em #909090 solid;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em rgb(128, 117, 117);
+    padding: 1em;
+    position: relative;
+}
+
+.cartaRenting img{
+    width: 100%;
+    height: 7em;
+}
+
+
+/*   INVERSIONES  */
+
+.subtitulo{
+    color: #005447;
+    margin: 1em 0 0 1em;
+}
+
+.cartaInversiones{
+    background-color: #F1F0F0;
+    margin-top: 1em;
+    width: 19%;
+    height: 8.5em;
+    border: 0.15em #909090 solid;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em rgb(128, 117, 117);
+    padding: 1em;
+}
+
+.cartaInversiones img{
+    width: 100%;
+    height: 7em;
+}
+
+/*    BOLSA     */
+
+.bolsaContainer{
+    margin-top: 2em;
+    height: 70vh;
+}
+
+
+/*   TRANSFERENCIAS    */
+
+.enlacesTransferencias{
+    width: 19%;
+    text-decoration: none;
+    color: black;
+}
+
+.opcionesTransferencias{
+    background-color: #F1F0F0;
+    margin-top: 1em;
+    width: 100%;
+    height: 2em;
+    border: 0.15em #909090 solid;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em rgb(128, 117, 117);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.opcionesTransferencias img{
+    width: 90%;
+}
+
+.ultimasTransferencias{
+    background-color: #F1F0F0;
+    margin-top: 1em;
+    width: 26%;
+    height: 4em;
+    border: 0.15em #909090 solid;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em rgb(128, 117, 117);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.ultimasTransferencias h3{
+    font-size: 3em;
+}
+
+
+/*   ENVIAR DINERO   */
+
+.enviarDinero{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.cartaDinero{
+    width: 100%;
+    background-color: #F1F0F0;
+    margin-top: 1em;
+    height: 15em;
+    border: 0.15em #909090 solid;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em rgb(128, 117, 117);
+    padding: 1em;
+}
+
+.cartaDinero h4{
+    margin-top: 1.5em;
+}
+
+.entrarTransferencias{
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    background-color: #DFFF9B;
+    margin: 2em 0 1em 4em;
+    border-radius: 0.5em;
+    border: none;
+    border: #005447 0.2em solid;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cartaDinero input{
+    width: 93%;
+    border-radius: 2em;
+    margin-top: 1em;
+    border: 3px #303b18 solid;
+    padding: 0 0.5em;
+}
+
+.pagoQR{
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pagoQR img{
+    margin-top: 2em;
+    width: 60%;
+}
+
+
+/*   PENSIONES    */
+
+.cartaPensiones{
+    background-color: #F1F0F0;
+    margin-top: 3em;
+    width: 30%;
+    height: 25em;
+    border: 0.15em #909090 solid;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em rgb(128, 117, 117);
+    padding: 1em;
+    position: relative;
+}
+
+.cartaPensiones img{
+    width: 100%;
+    height: 15em;
+}
+
+.cartaPensiones h4{
+    margin: 0.8em;
+    font-size: 1.1em;
+}
+
+.cartaPensiones h6{
+    margin: 1em;
+    font-size: 0.9em;
+}
+
+.botonContratar{
+    position: absolute;
+    width: 60%;
+    bottom: 5%;
+    left: 25%;
+    border-radius: 0.5em;
+    border: none;
+    border: #005447 0.2em solid;
+    font-size: 1.2em;
+    font-weight: bold;
+}
